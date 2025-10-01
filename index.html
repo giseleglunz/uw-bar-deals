@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Gisele's Favorites</title>
-		<link rel="stylesheet" href="stylesheet.css">
-	</head>
+<head>
+  <meta charset="UTF-8">
+  <title>UW Madison Bar Deals</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #b70101;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: #eee;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #b70101;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    #map {
+      height: 400px;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #f4f4f4;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>UW Madison Bar Deals</h1>
+    <p>Find daily drink specials around campus 🍺</p>
+  </header>
 
-	<body>
-		<h1>Gisele Glunz's Favorites</h1>
-		<nav>
-			<ul>
-				<li><a style="color:#0a0a0a;" href="index.html">Home</a></li>
-				<li><a style="color:#0a0a0a;" href="film.html">Film</a></li>
-				<li><a style="color:#0a0a0a;" href="book.html">Books</a></li>
-				<li><a style="color:#0a0a0a;" href="music.html">Music</a></li>
-			</ul>
-		</nav>
+  <nav>
+    <ul>
+      <li><a href="monday.html">Monday</a></li>
+      <li><a href="tuesday.html">Tuesday</a></li>
+      <li><a href="wednesday.html">Wednesday</a></li>
+      <li><a href="thursday.html">Thursday</a></li>
+      <li><a href="friday.html">Friday</a></li>
+      <li><a href="saturday.html">Saturday</a></li>
+      <li><a href="sunday.html">Sunday</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <h2>Explore Madison’s Bar Scene</h2>
+    <p>Select a day above to see all the bar deals happening that night. Check out the interactive map below to find your favorite spot!</p>
+    <div id="map"></div>
+  </main>
 
-	</header>
-	<main>
-			<p> Hi! My name is Gisele Glunz, and I am a sophomore at the University of Wisconsin-Madison majoring in Information Science with certificates in Data Science and Digital Studies. I am active in Badger Volunteers, where I am a team leader at a senior living center, and I am currently looking for data analyst internships in the Milwaukee area. In my free time, I enjoy watching movies, reading books, listening to music, and traveling. </p>
-	</main>
+  <footer>
+    <p>&copy; 2025 UW Bar Deals</p>
+  </footer>
 
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([43.0731, -89.4012], 14);
 
-		<section>
-			<article>	
-				<img src="profile.png" alt="Gisele Glunz wearing pink top and smiling LinkedIn profile picture" width="200" height="200">
-			</article>	
-			<article>
-				<p> Contact Me! </p>
-				<p> Email: gglunz@wisc.edu </p>
-				<p>  Connect with me on LinkedIn!</p>
-				<p><a href="https://www.linkedin.com/in/gisele-glunz-883735238/">Gisele Glunz</a></p>
-			</article>	
-			<article>	
-				<img src="paramount.png" alt="Paramount main gates with fountain" width="200" height="200">
-			</article>	
-		</section>
-		
-		
-		<footer>
-			<p>&copy; Copyright 2024</p>
-		</footer>
-	</body>
-	
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+  </script>
 
+</body>
 </html>
