@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Gisele's Favorites</title>
-		<link rel="stylesheet" href="stylesheet.css">
-	</head>
+<head>
+  <meta charset="UTF-8">
+  <title>Monday Bar Deals - UW Madison</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #b70101;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: #eee;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #b70101;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .deal {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #f4f4f4;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
 
-	<body>
-		<header>
-			<h1>Gisele Glunz's Favorites</h1>
-			<nav>
-				<ul>
-					<li><a style="color:#0a0a0a;" href="index.html">Home</a></li>
-					<li><a style="color:#0a0a0a;" href="film.html">Film</a></li>
-					<li><a style="color:#0a0a0a;" href="book.html">Books</a></li>
-					<li><a style="color:#0a0a0a;" href="music.html">Music</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<p>
-				My three favorite books are <i>Lost Stars</i>, <i>Pride and Prejudice</i>, and <i>A Game of Thrones</i>.
-			</p>
-		</main>
-		<section>
-			
-			<article class="mart2">	
-				<h5>STAR WARS: LOST STARS</h5>
-					<dl>
-  						<dt>Author</dt>
-  						<dd>Claudia Gray</dd>
+  <header>
+    <h1>Monday Bar Deals</h1>
+    <p>UW Madison Campus 🍺</p>
+  </header>
 
-  						<dt>Year</dt>
-  						<dd>2015</dd>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="monday.html">Monday</a></li>
+      <li><a href="tuesday.html">Tuesday</a></li>
+      <li><a href="wednesday.html">Wednesday</a></li>
+      <li><a href="thursday.html">Thursday</a></li>
+      <li><a href="friday.html">Friday</a></li>
+      <li><a href="saturday.html">Saturday</a></li>
+      <li><a href="sunday.html">Sunday</a></li>
+    </ul>
+  </nav>
 
-  						<dt>Synopsis</dt>
-  						<dd>Set before, during, and after the events of the Star Wars Original Trilogy, childhood friends Ciena Ree and Thane Kyrell end up on opposite sides of the galactic conflict.</dd>
-					</dl>
-			</article>	
-			<article class="mart2">	
-				<h5>PRIDE AND PREJUDICE</h5>
-					<dl>
-  						<dt>Author</dt>
-  						<dd>Jane Austen</dd>
+  <main>
+    <h2>Deals Happening on Monday</h2>
 
-  						<dt>Year</dt>
-  						<dd>1813</dd>
+    <div class="deal">
+      <h3>Bar Name 1</h3>
+      <p>Deal: $2 beers from 4–7 PM</p>
+      <p>Address: 123 Main St, Madison, WI</p>
+    </div>
 
-  						<dt>Synopsis</dt>
-  						<dd>In the early 19th century, Mr. Bennet has five daughters, but his property can only be passed on to a male heir. At least one of his daughters must marry well to support the rest of the family in the event of their father's death.</dd>
-					</dl>
-			</article>	
-			<article class="mart2">	
-				<h5>A GAME OF THRONES</h5>
-					<dl>
-  						<dt>Author</dt>
-  						<dd>George R.R. Martin</dd>
+    <div class="deal">
+      <h3>Bar Name 2</h3>
+      <p>Deal: Half-priced cocktails all night</p>
+      <p>Address: 456 State St, Madison, WI</p>
+    </div>
 
-  						<dt>Year</dt>
-  						<dd>1996</dd>
+    <!-- Add more deals here -->
+  </main>
 
-  						<dt>Synopsis</dt>
-  						<dd>Beginning in the year 298 AC (After Conquest), several noble houses fight for the claim to the Iron Throne. Three different storylines are followed simultaneously and are told from various points of view.</dd>
-					</dl>
-			</article>	
-		</section>
+  <footer>
+    <p>&copy; 2025 UW Bar Deals</p>
+  </footer>
 
-		<footer>
-				<p>&copy; Copyright 2024</p>
-		</footer>
-
-	</body>
-	
-
+</body>
 </html>
